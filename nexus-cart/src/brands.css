@@ -52,6 +52,10 @@
     padding-top: 35px;
 }
 
+.brands-in ul li:hover img{
+    transform: scale(.9);
+}
+
 .brands-in ul li img{
     width: 70%;
     height: 70%;

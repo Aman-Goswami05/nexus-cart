@@ -45,7 +45,7 @@ nav ul li a{
     display: block;
     margin: 0 2px;
     font-weight: 600;
-    padding: 8px 18px;
+    padding: 8px 10px;
     transition: 0.2s;
     border-radius: 30px;
 }
@@ -76,18 +76,28 @@ nav ul li a:hover{
 
 .search-form input{
     height: 100%;
-    width: 100%;
+    width: 80%;
     background: none;
     font-size: 1rem;
     border: none;
-    padding: 0 1rem;
+    padding-left: 1rem;
     outline: none;
+}
+
+.search-form .search-button{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 6px;
+}
+
+.search-button:hover{
+    background: #fff !important;
 }
 
 .search-form label{
     font-size: 0.3rem;
-    padding-right: 1rem;
     cursor: pointer;
+    margin-right: 6px;
 }
 
 

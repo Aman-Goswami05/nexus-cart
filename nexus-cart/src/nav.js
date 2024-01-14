@@ -4,6 +4,7 @@ import { FaSearch,FaUserCircle,FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './nav.css';
 const Nav = () => {
+    const dataToSend = "Hii from Aman";
     return (
         <>
             <header>
@@ -20,7 +21,7 @@ const Nav = () => {
                             <a href="#">About</a>
                         </li>
                         <li>
-                            <a href="#">Products</a>
+                            <Link to="/Products">Products</Link>
                         </li>
                         <li>
                             <a href="#">Features</a>
@@ -30,8 +31,10 @@ const Nav = () => {
                         </li>
                         <li>
                             <form className="search-form">
-                                <input type="search" id="search-box" placeholder="Search Products"></input>
-                                <label><FaSearch  size={17} /></label>
+                                <input type="search" id="search-box" placeholder="Search Products" name="product"></input>
+                                <Link className="search-button"to={`/Products/${dataToSend}`}>
+                                    <label><FaSearch  size={17} /></label>
+                                </Link>
                             </form>
                         </li>
                         <li>
