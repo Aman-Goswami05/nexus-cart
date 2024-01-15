@@ -9,7 +9,7 @@ const Nav = () => {
         <>
             <header>
                 <div className="logo">
-                    <img src="./images/logo.png" alt=""></img>
+                    <img src="/images/logo.png" alt=""></img>
                 </div>
                 <input type="checkbox" id="nav_check" hidden></input>
                 <nav>

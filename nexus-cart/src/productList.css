@@ -28,7 +28,6 @@
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     outline: .1rem solid #ccc;
     outline-offset: -1.5rem;
-    cursor: pointer;
 }
 
 .card-container .product-container .product img{
@@ -49,4 +48,30 @@
 .card-container .product-container .product .price{
     font-size: 1rem;
     color: #444;
+}
+
+.card-container .product-container .product .product-info-button{
+    display: flex;
+    width: 6rem;
+    height: 2rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c1c0c0;  
+    cursor: pointer;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.card-container .product-container .product .product-info-button:hover{
+    background-color: #f4f3f3;
+}
+
+.card-container .product-container .product .product-info-button h3{
+    margin-right: 0.5rem;
+}
+
+.card-container .product-container .product .product-info-button svg{
+    margin-left: 0.5rem;
 }

@@ -1,5 +1,6 @@
 .home-container{
     width: 80%;
+    height: max-content;
     background-color: white;
     margin: 5% auto 5% auto;
     display: flex;
@@ -7,19 +8,18 @@
     border-radius: 10px;
 }
 
-
 .home-title{
     font-size: 7vh;
-    margin: 10vh 0vh 0vh 15vh;
+    margin: 10vh auto 0vh 15vh;
 }
 
 .home-text p{
-    width: 65%;
+    width: 70%;
     text-align: justify;
-    margin-left: 8vh;
+    margin: 1vh auto 0vh 15vh;
 }
 
 .home-image{
-    width: 50%;
+    width: 40%;
     margin: 5vh 2vh 5vh 0px ;
 }

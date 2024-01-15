@@ -11,7 +11,6 @@ const Products = () => {
         <>
             <Nav />
             <ProductIntro />
-            <h2>{data}</h2>
             <ProductList />
             <Footer />
         </>
