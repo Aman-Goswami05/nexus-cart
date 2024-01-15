@@ -50,8 +50,22 @@ nav ul li a{
     border-radius: 30px;
 }
 
+nav ul li button{
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    width: 2.7rem;
+    height: auto;
+    border: none;
+    margin-top: 0.5rem;
+}
+
 nav ul li a:hover{
-    background: #f6f6fe;
+    color: #606060;
+}
+
+nav ul li button:hover{
+    color: #606060;
 }
 
 .hamburger{
@@ -100,6 +114,81 @@ nav ul li a:hover{
     margin-right: 6px;
 }
 
+header .shopping-cart{
+    border: 0px solid;
+    position: absolute;
+    top: 10%;
+    right: 2rem;    
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: #212526;
+    width: 25rem;
+    background: #fff;
+    display: none;
+}
+
+header .shopping-cart.active{
+    display: block;
+}
+
+header .shopping-cart .cart-box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+header .shopping-cart .cart-box img{
+    width: 6rem;
+    height: auto;
+}
+
+header .shopping-cart .cart-box .bin-btn{
+    position: absolute;
+    top: 45%;
+    right: 0.7rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    color: #848484;
+}
+
+.shopping-cart .cart-box .cart-content .cart-product-title{
+    padding-bottom: 0.3rem;
+}
+
+.shopping-cart .cart-box .cart-content .cart-product-price, .cart-product-qty{
+    font-size: 1rem;
+}
+
+.shopping-cart .cart-box .cart-content .cart-product-qty{
+    padding-left: 1rem;
+}
+
+.shopping-cart .cart-total{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.shopping-cart .cart-checkout-btn{
+    display: flex;
+    padding: 0.2rem 2rem;
+    border: 1px solid;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    margin: 0rem 5rem 0.7rem 5rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.shopping-cart .cart-checkout-btn:hover{
+    background-color: #f8f8f8;
+}
 
 @media only screen and (max-width: 1100px){
     header{
