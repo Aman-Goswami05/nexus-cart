@@ -15,7 +15,7 @@ const Footer = () => {
                             <p>
                                 With a curated collection of high-quality shoes, we strive to provide a seamless online shopping experience. Whether you're a trendsetter or in search of timeless classics, our diverse range ensures there's something for every style. Step into fashion-forward footwear with Nexus-Mart.
                             </p>
-                            <ul class="sci">
+                            <ul className="sci">
                                 <li><a href="#"><span><FaGithub size={22}/></span></a></li>
                                 <li><a href="#"><span><FaFacebook size={22}/></span></a></li>
                                 <li><a href="#"><span><SiInstagram size={22}/></span></a></li>

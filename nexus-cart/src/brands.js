@@ -7,7 +7,7 @@ const Brands = () => {
                 <div className="brands-wrap">
                     <h2>Top Brands</h2>
                     <hr />
-                    <div class="brands-in">
+                    <div className="brands-in">
                         <ul>
                             <li>
                                 <img src="/images/brands/brand2.png" alt=""></img>

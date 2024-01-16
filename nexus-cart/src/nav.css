@@ -26,6 +26,8 @@ header{
     padding: 0 40px;
     border-radius: 0 0 10px 10px;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
 }
 
 .logo{
@@ -117,10 +119,11 @@ nav ul li button:hover{
 header .shopping-cart{
     border: 0px solid;
     position: absolute;
-    top: 10%;
-    right: 2rem;    
+    top: 5rem;
+    right: -5rem;    
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     box-shadow: #212526;
     width: 25rem;
     background: #fff;
@@ -169,7 +172,6 @@ header .shopping-cart .cart-box .bin-btn{
     font-size: 1.2rem;
     text-align: center;
     padding: 1rem 0;
-    font-weight: 600;
 }
 
 .shopping-cart .cart-checkout-btn{

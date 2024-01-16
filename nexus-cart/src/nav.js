@@ -78,7 +78,7 @@ const Nav = () => {
                         </div>
                     </div>
                     <div className="cart-total">
-                        Total Amount : $360.00/- 
+                        Total Amount : $360.00 + G.S.T 
                     </div>
                     <Link className="cart-checkout-btn"to={`/Checkout`}>
                         Checkout
