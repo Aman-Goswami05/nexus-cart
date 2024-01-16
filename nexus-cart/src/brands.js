@@ -1,5 +1,7 @@
 import React from "react";
 import './brands.css';
+import BrandsJson from './brands-list.json';
+import { Link } from "react-router-dom";
 const Brands = () => {
     return (
         <>
@@ -9,36 +11,18 @@ const Brands = () => {
                     <hr />
                     <div className="brands-in">
                         <ul>
-                            <li>
-                                <img src="/images/brands/brand2.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="/images/brands/brand3.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand4.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand5.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand7.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand8.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand9.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand10.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand11.png" alt=""></img>
-                            </li>
-                            <li>
-                                <img src="./images/brands/brand12.png" alt=""></img>
-                            </li>
+                            {
+                                BrandsJson.map(brand => {
+                                    return (
+                                        <li>
+                                            <Link to={`/Products/Brand/${brand.brand}`}>
+                                                <img src={brand.image} alt=""></img>
+                                                <h4>{brand.brand}</h4>
+                                            </Link>
+                                        </li>        
+                                    );
+                                })
+                            }
                         </ul>
                     </div>
                 </div>

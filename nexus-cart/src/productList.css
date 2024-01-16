@@ -8,7 +8,7 @@
 }
 
 .card-container .title{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #444;
     margin-bottom: 3rem;
     text-transform: uppercase;
@@ -48,6 +48,10 @@
 .card-container .product-container .product .price{
     font-size: 1rem;
     color: #444;
+}
+
+.card-container .product-container .product a{
+    color: black;
 }
 
 .card-container .product-container .product .product-info-button{

@@ -13,7 +13,6 @@ const ShowCart = () => {
 }
 
 const Nav = () => {
-    const dataToSend = "Hii from Aman";
     return (
         <>
             <header>
@@ -38,13 +37,11 @@ const Nav = () => {
                         <li>
                             <a href="#">Contact</a>
                         </li>
-                        <li>
-                            <form className="search-form">
-                                <input type="search" id="search-box" placeholder="Search Products" name="product"></input>
-                                <Link className="search-button"to={`/Products/${dataToSend}`}>
-                                    <label><FaSearch  size={17} /></label>
-                                </Link>
-                            </form>
+                        <li className="search-form">
+                            <input type="search" id="search-box" placeholder="Search Products" name="product"></input>
+                            <Link className="search-button"to={`/Products/Search/Bammi`}>
+                                <label><FaSearch  size={17} /></label>
+                            </Link>
                         </li>
                         <li>
                             <Link to="/login"><FaUserCircle size={20} /></Link>

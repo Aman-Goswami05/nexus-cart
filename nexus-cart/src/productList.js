@@ -1,13 +1,14 @@
 import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
-import './productList.css';
 import { Link } from "react-router-dom";
 import ProductJson from './product-list.json';
-const ProductList = () => {
+import './productList.css';
+
+const ProductList = ({productItem}) => {
     return (
         <>
             <div className="card-container">
-                <h3 className="title">Men Shoes</h3>
+                <h3 className="title">{productItem.data}</h3>
                 <div className="product-container">
                     {
                         ProductJson.map(product => {

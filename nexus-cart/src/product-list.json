@@ -3,6 +3,7 @@
         "id": 1,
         "title": "Nike Shoes",
         "Image": "/images/boots/boots1.png",
+        "Brand": "woodland",
         "About": "This is the sample data for Nike shoes",
         "oldPrice": "$130.00",
         "newPrice": "$98.00"
@@ -11,6 +12,7 @@
         "id": 2,
         "title": "Woodland Shoes",
         "Image": "/images/formal/formal1.png",
+        "Brand": "gucci",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -18,7 +20,8 @@
     {
         "id": 3,
         "title": "Woodland Shoes",
-        "Image": "/images/formal/formal2.png",
+        "Image": "/images/heels/heels2.png",
+        "Brand": "jimmy choo",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -26,7 +29,8 @@
     {
         "id": 4,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels1.png",
+        "Image": "/images/heels/heels5.png",
+        "Brand": "jimmy choo",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -34,7 +38,8 @@
     {
         "id": 5,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels2.png",
+        "Image": "/images/heels/heels6.png",
+        "Brand": "jimmy choo",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -42,7 +47,8 @@
     {
         "id": 6,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels3.png",
+        "Image": "/images/heels/heels7.png",
+        "Brand": "jimmy choo",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -50,7 +56,8 @@
     {
         "id": 7,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels4.png",
+        "Image": "/images/heels/heels9.png",
+        "Brand": "jimmy choo",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -58,7 +65,8 @@
     {
         "id": 8,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels5.png",
+        "Image": "/images/sandles/sandles2.png",
+        "Brand": "golden goose",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -66,7 +74,8 @@
     {
         "id": 9,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels6.png",
+        "Image": "/images/slippers/slippers1.png",
+        "Brand": "golden goose",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -74,7 +83,8 @@
     {
         "id": 10,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels7.png",
+        "Image": "/images/slippers/slippers2.png",
+        "Brand": "grenson",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -82,7 +92,8 @@
     {
         "id": 11,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels8.png",
+        "Image": "/images/sneakers/sneakers1.png",
+        "Brand": "puma",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -90,7 +101,8 @@
     {
         "id": 12,
         "title": "Woodland Shoes",
-        "Image": "/images/heels/heels9.png",
+        "Image": "/images/sneakers/sneakers2.png",
+        "Brand": "puma",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -98,7 +110,8 @@
     {
         "id": 13,
         "title": "Woodland Shoes",
-        "Image": "/images/sandles/sandles1.png",
+        "Image": "/images/sneakers/sneakers3.png",
+        "Brand": "puma",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -106,7 +119,8 @@
     {
         "id": 14,
         "title": "Woodland Shoes",
-        "Image": "/images/sandles/sandles2.png",
+        "Image": "/images/sneakers/sneakers4.png",
+        "Brand": "burberry",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -114,7 +128,8 @@
     {
         "id": 15,
         "title": "Woodland Shoes",
-        "Image": "/images/slippers/slippers1.png",
+        "Image": "/images/sneakers/sneakers5.png",
+        "Brand": "burberry",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -122,7 +137,8 @@
     {
         "id": 16,
         "title": "Woodland Shoes",
-        "Image": "/images/slippers/slippers2.png",
+        "Image": "/images/sneakers/sneakers6.png",
+        "Brand": "chanel",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -130,7 +146,8 @@
     {
         "id": 17,
         "title": "Woodland Shoes",
-        "Image": "/images/slippers/slippers3.png",
+        "Image": "/images/sneakers/sneakers7.png",
+        "Brand": "chanel",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -138,7 +155,8 @@
     {
         "id": 18,
         "title": "Woodland Shoes",
-        "Image": "/images/sneakers/sneakers1.png",
+        "Image": "/images/sneakers/sneakers8.png",
+        "Brand": "chanel",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
@@ -146,15 +164,8 @@
     {
         "id": 19,
         "title": "Woodland Shoes",
-        "Image": "/images/sneakers/sneakers2.png",
-        "About": "This is the sample data for woodland shoes",
-        "oldPrice": "$150.00",
-        "newPrice": "$125.00"
-    },
-    {
-        "id": 20,
-        "title": "Woodland Shoes",
-        "Image": "/images/sneakers/sneakers3.png",
+        "Image": "/images/sneakers/sneakers9.png",
+        "Brand": "adidas",
         "About": "This is the sample data for woodland shoes",
         "oldPrice": "$150.00",
         "newPrice": "$125.00"
