@@ -4,29 +4,29 @@ import { MdAlternateEmail } from "react-icons/md";
 import './sign.css';
 const Sign = () => {
     return (
-        <>
-            <div className="wrapper">
-                <div className="form-container sign-up">
-                    <form action="" method="post">
+        <div className="login">
+            <div className="login-wrapper">
+                <div className="login-form-container sign-up">
+                    <form className="login-form" action="" method="post">
                         <h2>sign up</h2>
                         <div className="form-group">
                             <input type="text" name="username" required></input>
-                            <FaUserCircle size={20} />
+                            <FaUserCircle size={25} className="react-icon" />
                             <label for="">username</label>
                         </div>
                         <div className="form-group">
                             <input type="email" name="email" required></input>
-                            <MdAlternateEmail size={20} />
+                            <MdAlternateEmail size={25} className="react-icon" />
                             <label for="">email</label>
                         </div>
                         <div className="form-group">
                             <input type="text" name="password" required></input>
-                            <FaLock size={20} />
+                            <FaLock size={25} className="react-icon" />
                             <label for="">password</label>
                         </div>
                         <div className="form-group">
                             <input type="text" required></input>
-                            <FaLock size={20} />
+                            <FaLock size={25} className="react-icon" />
                             <label for="">confirm password</label>
                         </div>
                         <button type="submit" className="btn">sign up</button>
@@ -36,17 +36,17 @@ const Sign = () => {
                         </div>
                     </form>
                 </div>
-                <div className="form-container sign-in">
-                    <form action="" method="post">
+                <div className="login-form-container sign-in">
+                    <form className="login-form" action="" method="post">
                         <h2>Login</h2>
                         <div className="form-group">
                             <input type="text" name="username" required></input>
-                            <FaUserCircle size={20} />
+                            <FaUserCircle size={25} className="react-icon" />
                             <label for="">username</label>
                         </div>
                         <div className="form-group">
                             <input type="text" name="password" required></input>
-                            <FaLock size={20} />
+                            <FaLock size={25} className="react-icon" />
                             <label for="">password</label>
                         </div>
                         <div className="forgot-pass">
@@ -62,22 +62,22 @@ const Sign = () => {
                     </form>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
-// let wrapper = document.querySelector('.wrapper');
-// let signUpLink = document.querySelector('.link .signup-link');
-// let signInLink = document.querySelector('.link .signin-link');
+let wrapper = document.querySelector('.login-wrapper');
+let signUpLink = document.querySelector('.link .signup-link');
+let signInLink = document.querySelector('.link .signin-link');
 
-// signUpLink.addEventListener('click', ()=>{
-//     wrapper.classList.add('animated-signin');
-//     wrapper.classList.remove('animated-signup');
-// });
+signUpLink.addEventListener('click', () => {
+    wrapper.classList.add('animated-signin');
+    wrapper.classList.remove('animated-signup');
+});
 
-// signInLink.addEventListener('click', ()=>{
-//     wrapper.classList.add('animated-signup');
-//     wrapper.classList.remove('animated-signin');
-// });
+signInLink.addEventListener('click', () => {
+    wrapper.classList.add('animated-signup');
+    wrapper.classList.remove('animated-signin');
+});
 
 export default Sign;
