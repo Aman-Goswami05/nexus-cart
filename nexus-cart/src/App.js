@@ -4,6 +4,7 @@ import Sign from "./sign";
 import Main from "./main";
 import Products from "./products";
 import ProductDetails from "./productDetails";
+import './App.css';
 const App = () => {
   return (
     <div className="App">
