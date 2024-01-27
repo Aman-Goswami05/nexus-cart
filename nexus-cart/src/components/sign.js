@@ -1,14 +1,28 @@
 import React,{useState} from "react";
 import { FaUserCircle, FaLock } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import { Link,useNavigate } from "react-router-dom";
+
 import './sign.css';
 
 const Sign = () => {
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const collectData = ()=>{
+    const navigate = useNavigate();
+    const collectData = async ()=>{
         console.warn(name,email,password);
+        let result = await fetch('http://localhost:5000/register',{
+            method:'post',
+            body: JSON.stringify({name,email,password}),
+            headers:{
+                'Content-Type': 'application/json'
+            }  
+        })
+        result = await result.json();
+        if(result){
+            navigate('/');
+        }
     }
     return (        
         <div className="login">
@@ -41,6 +55,7 @@ const Sign = () => {
                             <p>You already have an account</p>
                             <a href="#" className="signin-link" onClick={showSignIn}>sign in</a>
                         </div>
+                        <Link to="/">Go Back</Link>
                     </form>
                 </div>
                 <div className="login-form-container sign-in">
@@ -65,7 +80,9 @@ const Sign = () => {
                         <div className="link">
                             <p>Dont't have an account?</p>
                             <a href="#" className="signup-link" onClick={showSignUp}>sign up</a>
+                            <br></br>
                         </div>
+                        <Link to="/">Go Back</Link>
                     </form>
                 </div>
             </div>
