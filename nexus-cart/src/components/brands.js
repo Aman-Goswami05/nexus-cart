@@ -1,5 +1,4 @@
 import React from "react";
-import './brands.css';
 import BrandsJson from './brands-list.json';
 import { Link } from "react-router-dom";
 const Brands = () => {

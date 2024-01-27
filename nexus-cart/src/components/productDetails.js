@@ -1,5 +1,4 @@
 import React from "react";
-import './productDetails.css';
 import Nav from "./nav";
 import Footer from "./footer";
 import { TiTick } from "react-icons/ti";
@@ -7,6 +6,8 @@ import { FaFacebook} from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
+
+
 const ProductDetails = () => {
     return (
         <>

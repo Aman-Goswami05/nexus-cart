@@ -5,7 +5,6 @@ import { ImBin2 } from "react-icons/im";
 import { MdShoppingCartCheckout } from "react-icons/md";
 
 import { Link } from "react-router-dom";
-import './nav.css';
 
 const ShowCart = () => {
     let cart = document.querySelector('.shopping-cart');

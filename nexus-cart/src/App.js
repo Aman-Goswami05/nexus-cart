@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
-import Sign from "./sign";
-import Main from "./main";
-import Products from "./products";
-import ProductDetails from "./productDetails";
+import Sign from "./components/sign";
+import Main from "./components/main";
+import Products from "./components/products";
+import ProductDetails from "./components/productDetails";
 import './App.css';
 const App = () => {
   return (

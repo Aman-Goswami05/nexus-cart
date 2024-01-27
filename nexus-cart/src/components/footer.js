@@ -3,7 +3,6 @@ import { FaGithub,FaFacebook} from "react-icons/fa";
 import { SiInstagram } from "react-icons/si";
 import { MdOutlineMailLock } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-import './footer.css';
 const Footer = () => {
     return (
         <>

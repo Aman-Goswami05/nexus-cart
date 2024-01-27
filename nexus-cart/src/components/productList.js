@@ -2,7 +2,6 @@ import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProductJson from './product-list.json';
-import './productList.css';
 
 const ProductList = ({productItem}) => {
     return (
