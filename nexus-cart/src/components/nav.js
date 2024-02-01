@@ -66,7 +66,7 @@ const Nav = () => {
                     </div>
                     <div className="cart-box">
                         <ImBin2 size={20} className="bin-btn"/>
-                        <img src="/images/slippers/slippers3.png" alt=""></img>
+                        <img src="/images/logo.png" alt=""></img>
                         <div className="cart-content">
                             <h3 className="cart-product-title">Woodland Shoe</h3>
                             <span className="cart-product-price">$120.00/-</span>

@@ -10,6 +10,7 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route exact path='/' element={<Main />}/>
+        <Route exact path='/:data' element={<Main />}/>        
         <Route path='/login' element={<Sign />}/>
         <Route exact path='/Products' element={<Products check={"all"}/>}/>
         <Route exact path="/Products/Brand/:data" element={<Products check={"brand"}/>}/>

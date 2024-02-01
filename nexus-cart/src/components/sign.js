@@ -10,8 +10,7 @@ const Sign = () => {
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
     const navigate = useNavigate();
-    const collectData = async ()=>{
-        console.warn(name,email,password);
+    const registerUser = async ()=>{
         let result = await fetch('http://localhost:5000/register',{
             method:'post',
             body: JSON.stringify({name,email,password}),
@@ -20,15 +19,34 @@ const Sign = () => {
             }  
         })
         result = await result.json();
+        localStorage.setItem("user",JSON.stringify(result));
+        const username = result.name;
         if(result){
-            navigate('/');
+            navigate(`/${username}`);
         }
     }
+    
+    const loginUser = async ()=>{
+        let result = await fetch('http://localhost:5000/login',{
+            method:'post',
+            body: JSON.stringify({name,password}),
+            headers:{
+                'Content-Type': 'application/json'
+            }  
+        })
+        result = await result.json();
+        localStorage.setItem("user",JSON.stringify(result));
+        const username = result.name;
+        if(result){
+            navigate(`/${username}`);
+        }
+    }
+
     return (        
         <div className="login">
             <div className="login-wrapper">
                 <div className="login-form-container sign-up">
-                    <form className="login-form" action="">
+                    <div className="login-form" action="">
                         <h2>sign up</h2>
                         <div className="form-group">
                             <input type="text" name="username" value={name} onChange={(e)=>setName(e.target.value)} required></input>
@@ -50,24 +68,24 @@ const Sign = () => {
                             <FaLock size={25} className="react-icon" />
                             <label htmlFor="">confirm password</label>
                         </div>
-                        <button className="btn" onClick={collectData}>sign up</button>
+                        <button className="btn" onClick={registerUser}>sign up</button>
                         <div className="link">
                             <p>You already have an account</p>
                             <a href="#" className="signin-link" onClick={showSignIn}>sign in</a>
                         </div>
                         <Link to="/">Go Back</Link>
-                    </form>
+                    </div>
                 </div>
                 <div className="login-form-container sign-in">
-                    <form className="login-form" action="">
+                    <div className="login-form" action="">
                         <h2>Login</h2>
                         <div className="form-group">
-                            <input type="text" name="username" required></input>
+                            <input type="text" name="username" onChange={(e)=>setName(e.target.value)} required></input>
                             <FaUserCircle size={25} className="react-icon" />
                             <label for="">username</label>
                         </div>
                         <div className="form-group">
-                            <input type="text" name="password" required></input>
+                            <input type="text" name="password" onChange={(e)=>setPassword(e.target.value)} required></input>
                             <FaLock size={25} className="react-icon" />
                             <label for="">password</label>
                         </div>
@@ -76,14 +94,14 @@ const Sign = () => {
                         </div>
 
                         {/* Error message will be included here */}
-                        <button type="submit" className="btn">login</button>
+                        <button type="submit" className="btn" onClick={loginUser}>login</button>
                         <div className="link">
                             <p>Dont't have an account?</p>
                             <a href="#" className="signup-link" onClick={showSignUp}>sign up</a>
                             <br></br>
                         </div>
                         <Link to="/">Go Back</Link>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
