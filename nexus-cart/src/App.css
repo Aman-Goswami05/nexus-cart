@@ -10,7 +10,7 @@
 }
 
 body{
-    background: #e3e9f7;
+    background: #e8e8e8;
 }
 
 img{
@@ -119,7 +119,7 @@ nav ul li button:hover{
 }
 
 header .shopping-cart{
-    border: 0px solid;
+    border: 1px solid grey;
     position: absolute;
     top: 5rem;
     right: -5rem;    
@@ -132,7 +132,50 @@ header .shopping-cart{
     display: none;
 }
 
+header .profile{
+    border: 1px solid grey;
+    position: absolute;
+    top: 5rem;
+    right: -5rem;    
+    padding: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: #212526;
+    width: 15rem;
+    height: 12rem;
+    background: #fff;
+    display: none;
+}
+
+header .profile .profile-box{
+    text-align: center;
+}
+
+header .profile .sign-btn{
+    display: flex;
+    padding: 0.2rem 2rem;
+    border: 1px solid grey;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: rgb(39, 39, 39);
+    text-align: center;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.profile .sign-btn:hover{
+    background-color: #f8f8f8;
+}
+
+
 header .shopping-cart.active{
+    display: block;
+}
+
+header .profile.active{
     display: block;
 }
 
@@ -179,8 +222,9 @@ header .shopping-cart .cart-box .bin-btn{
 .shopping-cart .cart-checkout-btn{
     display: flex;
     padding: 0.2rem 2rem;
-    border: 1px solid;
-    border-radius: 5px;
+    border: 1px solid grey;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     color: black;
     text-align: center;
     margin: 0rem 5rem 0.7rem 5rem;
@@ -193,6 +237,7 @@ header .shopping-cart .cart-box .bin-btn{
 .shopping-cart .cart-checkout-btn:hover{
     background-color: #f8f8f8;
 }
+
 
 @media only screen and (max-width: 1100px){
     header{
@@ -614,11 +659,13 @@ footer .container .contact .info li a{
 
 .product-details-image{
     width: 50%;
+    height: 70vh;
 }
 
 .product-details-image img{
-    width: 95%;
-    height: auto;
+    margin-left: 6%;
+    width: 87%;
+    height: 65%;
     display: block;
     position: relative;
     top: 5rem;
@@ -709,13 +756,14 @@ footer .container .contact .info li a{
     text-align: center;
     padding: 0.45rem 0.8rem;
     outline: 0;
+    font-weight: 600;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
 }
 
 .purchase-info .add-cart-btn{
     cursor: pointer;
-    color: black
+    color: black;
 }
 
 .purchase-info .add-cart-btn:hover{
@@ -743,7 +791,7 @@ footer .container .contact .info li a{
 }
 
 .social-links a:hover{
-    background: #000;
+    background: rgb(55, 55, 55);
     border-color: transparent;
     color: #fff;
 }
