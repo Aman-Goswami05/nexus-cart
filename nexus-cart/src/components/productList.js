@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from "react";
-
 import { FaInfoCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -25,7 +24,7 @@ const ProductList = ({productItem}) => {
                                 <img src={product.Image} alt=""></img>
                                     <h3>{product.title}</h3>
                                     <div className="price">
-                                        {product.newPrice}
+                                        ${product.newPrice}
                                     </div>
                                     <Link className="product-info-button" to={`/Product-Details/${product._id}`}>
                                         <FaInfoCircle size={15}/>

@@ -15,7 +15,7 @@ const ProductDetails = () => {
     const productId = productObj.data;
     const [product,setProduct] = useState({});
     const { username } = useAuth();
-    const [quantity,setQuantity] = useState(null);
+    const [quantity,setQuantity] = useState(1);
     useEffect(()=>{
         fetch('http://localhost:5000/findProduct',{
             method: "post",
@@ -43,12 +43,12 @@ const ProductDetails = () => {
         .then((data)=>{
             let toast = document.createElement('div');
             toast.classList.add('toast');
-            toast.innerHTML = "<IoIosCloseCircle id='close' size={30}/> Product Added!";
+            toast.innerHTML = "<IoIosCloseCircle id='close' size={30} /> Product Added!";
             console.log("Product added!")
             toastBox.appendChild(toast);
             setTimeout(()=>{
                 toast.remove();
-            },6000)
+            },4000)
         })
     }
 
@@ -63,8 +63,8 @@ const ProductDetails = () => {
                     <div className="product-details-content">
                         <h2 className="product-details-title">{product.title}</h2>
                         <div className="product-details-price">
-                            <p className="last-price">Old Price: <span>{product.oldPrice}</span></p>
-                            <p className="new-price">New Price: <span>{product.newPrice}</span></p>
+                            <p className="last-price">Old Price: <span>${product.oldPrice}</span></p>
+                            <p className="new-price">New Price: <span>${product.newPrice}</span></p>
                         </div>
                         <div className="product-detail">
                             <h2>About this item</h2>
@@ -77,7 +77,7 @@ const ProductDetails = () => {
                         </div>
                         
                         <div className="purchase-info">
-                            <input type="number" min="1" max="5" id="quantity" onChange={(e)=>setQuantity(e.target.value)}></input>
+                            <input type="number" value={quantity} min="1" max="5" id="quantity" onChange={(e)=>setQuantity(e.target.value)}></input>
                             <button type="button" className="add-cart-btn" onClick={addProduct}>
                                 Add to cart <feFuncA />
                             </button>

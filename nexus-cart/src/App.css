@@ -118,7 +118,7 @@ nav ul li button:hover{
     margin-right: 6px;
 }
 
-header .shopping-cart{
+header #shopping-cart{
     border: 1px solid grey;
     position: absolute;
     top: 5rem;
@@ -132,7 +132,7 @@ header .shopping-cart{
     display: none;
 }
 
-header .profile{
+header #profile{
     border: 1px solid grey;
     position: absolute;
     top: 5rem;
@@ -147,11 +147,11 @@ header .profile{
     display: none;
 }
 
-header .profile .profile-box{
+header #profile .profile-box{
     text-align: center;
 }
 
-header .profile .sign-btn{
+header #profile .sign-btn{
     display: flex;
     padding: 0.2rem 2rem;
     border: 1px solid grey;
@@ -166,20 +166,20 @@ header .profile .sign-btn{
     margin-top: 1rem;
 }
 
-.profile .sign-btn:hover{
+#profile .sign-btn:hover{
     background-color: #f8f8f8;
 }
 
 
-header .shopping-cart.active{
+header #shopping-cart.active{
     display: block;
 }
 
-header .profile.active{
+header #profile.active{
     display: block;
 }
 
-header .shopping-cart .cart-box{
+header #shopping-cart .cart-box{
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -187,12 +187,12 @@ header .shopping-cart .cart-box{
     margin: 1rem 0;
 }
 
-header .shopping-cart .cart-box img{
+header #shopping-cart .cart-box img{
     width: 6rem;
     height: auto;
 }
 
-header .shopping-cart .cart-box .bin-btn{
+header #shopping-cart .cart-box .bin-btn{
     position: absolute;
     top: 45%;
     right: 0.7rem;
@@ -201,25 +201,25 @@ header .shopping-cart .cart-box .bin-btn{
     color: #848484;
 }
 
-.shopping-cart .cart-box .cart-content .cart-product-title{
+#shopping-cart .cart-box .cart-content .cart-product-title{
     padding-bottom: 0.3rem;
 }
 
-.shopping-cart .cart-box .cart-content .cart-product-price, .cart-product-qty{
+#shopping-cart .cart-box .cart-content .cart-product-price, .cart-product-qty{
     font-size: 1rem;
 }
 
-.shopping-cart .cart-box .cart-content .cart-product-qty{
+#shopping-cart .cart-box .cart-content .cart-product-qty{
     padding-left: 1rem;
 }
 
-.shopping-cart .cart-total{
+#shopping-cart .cart-total{
     font-size: 1.2rem;
     text-align: center;
     padding: 1rem 0;
 }
 
-.shopping-cart .cart-checkout-btn{
+#shopping-cart .cart-checkout-btn{
     display: flex;
     padding: 0.2rem 2rem;
     border: 1px solid grey;
@@ -234,7 +234,7 @@ header .shopping-cart .cart-box .bin-btn{
     gap: 0.5rem;
 }
 
-.shopping-cart .cart-checkout-btn:hover{
+#shopping-cart .cart-checkout-btn:hover{
     background-color: #f8f8f8;
 }
 
@@ -839,7 +839,7 @@ footer .container .contact .info li a{
     width: 100%;
     height: 5px;
     background: green;
-    animation: anim 5s linear forwards;
+    animation: anim 4s linear forwards;
 }
 
 @keyframes anim {
