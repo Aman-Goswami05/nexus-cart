@@ -7,7 +7,6 @@ import Carousel from "./carousel";
 import { useParams } from "react-router-dom";
 
 const Main = () => {
-    const {data} = useParams(); 
     return (
         <>
             <Nav />

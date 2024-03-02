@@ -6,22 +6,20 @@ import { MdShoppingCartCheckout } from "react-icons/md";
 import { IoPersonCircle } from "react-icons/io5";
 import { FaSignInAlt,FaSignOutAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useAuth } from '../AuthContext';
 
 const ShowCart = () => {
     let cart = document.querySelector('.shopping-cart');
-    let profile = document.querySelector('.profile');
     cart.classList.toggle('active');
-    // profile.style.display='none';
 }
 
 const ShowProfile = () => {
-    let cart = document.querySelector('.shopping-cart');
     let profile = document.querySelector('.profile');
     profile.classList.toggle('active');
-    // cart.style.display='none';
 }
 
 const Nav = () => { 
+    const { username } = useAuth();
     return (
         <>
             <header>
@@ -87,17 +85,18 @@ const Nav = () => {
                 <div className="profile">
                     <div className="profile-box">
                         <IoPersonCircle size={70}/>
-                        <h3>Aman Goswami</h3>
+                        <h3>{username}</h3>
                     </div>
-                    <Link className="sign-btn" to={`/login`}>
-                        Sign in
-                        <FaSignInAlt size={20}/>
-                    </Link>
-
-                    {/* <Link className="sign-btn" to={`/Checkout`}>
-                        Sign out
-                        <FaSignOutAlt size={20}/>
-                    </Link> */}
+                    {username==null?
+                        <Link className="sign-btn" to={`/login`}>
+                            Sign in
+                            <FaSignInAlt size={20}/>
+                        </Link>:
+                        <Link className="sign-btn" to={`/Checkout`}>
+                            Sign out
+                            <FaSignOutAlt size={20}/>
+                        </Link>                    
+                    }
                 </div>
             </header>
         </>

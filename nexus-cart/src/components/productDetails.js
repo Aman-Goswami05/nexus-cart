@@ -7,12 +7,15 @@ import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { useParams } from 'react-router-dom';
- 
+import { useAuth } from "../AuthContext";
+import { IoIosCloseCircle } from "react-icons/io";
 
 const ProductDetails = () => {
     const productObj = useParams();
     const productId = productObj.data;
     const [product,setProduct] = useState({});
+    const { username } = useAuth();
+    const [quantity,setQuantity] = useState(null);
     useEffect(()=>{
         fetch('http://localhost:5000/findProduct',{
             method: "post",
@@ -26,6 +29,29 @@ const ProductDetails = () => {
             setProduct(data);
         });
     },[]);
+
+    const addProduct = () => {
+        let toastBox = document.getElementById('toastBox'); 
+        fetch('http://localhost:5000/addProduct',{
+            method: "post",
+            crossDomain: true,
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({product,username,quantity})
+        }).then((res) => res.json())
+        .then((data)=>{
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = "<IoIosCloseCircle id='close' size={30}/> Product Added!";
+            console.log("Product added!")
+            toastBox.appendChild(toast);
+            setTimeout(()=>{
+                toast.remove();
+            },6000)
+        })
+    }
+
     return (
         <>
             <Nav />
@@ -51,8 +77,8 @@ const ProductDetails = () => {
                         </div>
                         
                         <div className="purchase-info">
-                            <input type="number" min="1" max="5" id="quantity"></input>
-                            <button type="button" className="add-cart-btn">
+                            <input type="number" min="1" max="5" id="quantity" onChange={(e)=>setQuantity(e.target.value)}></input>
+                            <button type="button" className="add-cart-btn" onClick={addProduct}>
                                 Add to cart <feFuncA />
                             </button>
                         </div>
@@ -75,6 +101,8 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
+
+            <div id="toastBox"></div>
             <Footer />
         </>
     );
